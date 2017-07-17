@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER mtdxc
 
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 WORKDIR /root
 
 # Download latest version of the code and install dependencies
